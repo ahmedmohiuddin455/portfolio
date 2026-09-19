@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">&lt;DevPortfolio /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="subtitle">Hi, I am </p>
+      <h1>Mohiuddin Ahmed</h1>
+      <h2>I build modern & responsive web applications.</h2>
+      <p class="bio">I am a passionate Junior Web Developer focused on crafting clean, responsive, and user-friendly web experiences using modern frontend & web technologies.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <p>I am a dedicated web developer with a strong foundation in frontend tools and modern development practices. I specialize in turning design mockups into functional, fast-loading, and interactive websites. I love learning new web frameworks, solving real-world programming problems, and collaborating on impactful tech projects. Currently, I am seeking a full-time Web Developer role to contribute my technical skills to a growth-oriented company.</p>
+    </div>
+  </section>
+
+  <!-- 3. Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+      <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+      <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript (ES6+)</span></div>
+      <div class="skill-card"><i class="fa-brands fa-react"></i><span>React.js</span></div>
+      <div class="skill-card"><i class="fa-solid fa-database"></i><span>SQL / MongoDB</span></div>
+      <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
+      <div class="skill-card"><i class="fa-brands fa-bootstrap"></i><span>Tailwind / Bootstrap</span></div>
+      <div class="skill-card"><i class="fa-solid fa-code"></i><span>REST APIs</span></div>
+    </div>
+  </section>
+
+  <!-- 4. Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="https://picsum.photos/400/250?random=1" alt="E-Commerce Storefront">
+        </div>
+        <div class="project-info">
+          <h3>E-Commerce Web Application</h3>
+          <p>A fully responsive web store with product dynamic filtering, cart calculation, local storage persistence, and checkout interface.</p>
+          <div class="tags">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+            <a href="https://vercel.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="https://picsum.photos/400/250?random=2" alt="Task Management App">
+        </div>
+        <div class="project-info">
+          <h3>Task Management Dashboard</h3>
+          <p>An interactive productivity application to create, track, edit, and organize daily tasks with status tags and filter functionality.</p>
+          <div class="tags">
+            <span>React</span>
+            <span>Tailwind</span>
+            <span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+            <a href="https://vercel.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Experience Section -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-card">
+        <span class="timeline-date">2025 - Present</span>
+        <h3>Frontend Web Developer (Projects / Coursework)</h3>
+        <p class="company">Web Development Intensive Program</p>
+        <p>Built responsive web applications, managed codebases using Git/GitHub version control, and successfully deployed frontend apps to cloud hosting servers like Vercel and Netlify.</p>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-date">2024 - 2025</span>
+        <h3>Freelance / Personal Web Projects</h3>
+        <p class="company">Self-Employed</p>
+        <p>Designed and developed customized landing pages, portfolio sites, and interactive web UI components for personal clients and open-source learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Education Section -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-card">
+        <span class="timeline-date">Graduation Year</span>
+        <h3>Bachelor of Science in Computer Science & Engineering</h3>
+        <p class="company">Your University / College Name</p>
+        <p>Relevant Coursework: Web Engineering, Database Management Systems, Software Engineering, Data Structures & Algorithms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Contact Section -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-desc">I am actively looking for full-time junior web developer opportunities. Whether you have a job opening or a project inquiry, feel free to send me a message!</p>
+    
+    <form class="contact-form" id="portfolioForm">
+      <input type="text" placeholder="Your Full Name" required>
+      <input type="email" placeholder="Your Email Address" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:your.email@example.com"><i class="fa-solid fa-envelope"></i> your.email@example.com</a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer>
+    <p>&copy; 2026 Designed & Built by Your Name. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script src="first.js"></script>
+</body>
+</html>
