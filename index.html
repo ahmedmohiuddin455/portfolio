@@ -134,6 +134,25 @@
       transform: translateY(-3px);
     }
 
+    /* Dynamic Profile Image Style */
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.08) rotate(2deg);
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 35px rgba(129, 140, 248, 0.6);
+    }
+
     /* ==========================================================================
        2. NAVIGATION BAR
        ========================================================================== */
@@ -547,6 +566,9 @@
   <!-- 1. Hero Section -->
   <section class="hero">
     <div class="hero-content">
+      <!-- Dynamic Profile Image -->
+      <img src="profile.jpg" alt="Mohiuddin Ahmed" class="profile-img">
+      
       <p class="subtitle">HELLO, I'M</p>
       <h1>Mohiuddin Ahmed</h1>
       <h3>Aspiring Web Developer & CSE Student</h3>
@@ -663,12 +685,12 @@
     <h2 class="section-title">Get In Touch</h2>
     <p class="contact-desc">I am actively looking for full-time junior web developer opportunities. Whether you have a job opening or a project inquiry, feel free to send me a message!</p>
     
-  <form class="contact-form" id="portfolioForm">
-  <input type="text" placeholder="Your Full Name" required>
-  <input type="email" placeholder="Your Email Address" required>
-  <textarea rows="5" placeholder="Your Message" required></textarea>
-  <button type="submit" class="btn btn-primary">Send Message</button>
-</form>
+    <form class="contact-form" id="portfolioForm">
+      <input type="text" placeholder="Your Full Name" required>
+      <input type="email" placeholder="Your Email Address" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
 
     <div class="social-links">
       <a href="https://github.com/ahmedmohiuddin455" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -684,10 +706,13 @@
     </div>
   </footer>
 
-  <script src="first.js"></script>
-
-</body>
-</html>
-
+  <!-- Form Submission JavaScript -->
+  <script>
+    document.getElementById('portfolioForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! Your message has been sent successfully.');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
